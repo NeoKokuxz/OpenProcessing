@@ -62,6 +62,7 @@ void mouseClicked() {
 			background(255, 204, 0);
 			fill(50);
 			text("Click again to go back!~", 150,150);
+			text("Press V to reset the screen.", 150, 170);
 		} else { 
 			background(255);
 			displayText();
@@ -138,6 +139,7 @@ void keyPressed(){
 			fill(50);
 			text("black-curve-on-white draws a spline curve", 100,100);
 			text("Click twice to exit", 100,120);
+			text("Press V to reset the screen.", 100, 140);
 			noFill();
 			stroke(1);
 			curve(cNum[1], cNum[2], cNum[3], cNum[4], cNum[5], cNum[6], cNum[7], cNum[8]);
@@ -153,6 +155,7 @@ void keyPressed(){
 			fill(255);
 			text("white-curve-on-black draws a B ́ezier curve", 100,100);
 			text("Click twice to exit", 100,120);
+			text("Press V to reset the screen.", 100, 140);
 			fill(0, 255, 38);
 			ellipse(cNum[1], cNum[2], 5, 5);
 			fill(238, 255, 0);
@@ -171,6 +174,7 @@ void keyPressed(){
 }
 
 void reset(){
+	background(255);
   t = 0;
   score = 0;
 	level = 1;
